@@ -326,7 +326,7 @@ const Drivers = (props) => {
                     </TableRow>
                   </TableHead>
                   <TableBody>
-                    {drivers.map((driver) => (
+                     {drivers && drivers.map((driver) => (
                       <React.Fragment>
                         {editDriverId === driver.id ? (
                           <EditableRow
