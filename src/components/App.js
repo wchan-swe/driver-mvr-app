@@ -9,7 +9,7 @@ import NotFound from '../pages/BadRequests/NotFound';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/React'>
       <Header />
       <Switch>
         <Route exact path="/" component={LandingPage} />
