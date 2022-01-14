@@ -9,12 +9,12 @@ import NotFound from '../pages/BadRequests/NotFound';
 
 const App = () => {
   return (
-    <BrowserRouter basename='/React'>
+    <BrowserRouter basename='/'>
       <Header />
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route path="/search" component={Search} />
-        <Route exact={true} path="/drivers" component={Drivers} />
+        <Route path="/drivers" component={Drivers} />
         <Route
           exact={true}
           path="/drivers/:driverId"
